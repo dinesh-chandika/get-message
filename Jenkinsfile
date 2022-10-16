@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withMaven {
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'
                 }
             }
         }
