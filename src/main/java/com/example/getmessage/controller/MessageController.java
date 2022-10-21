@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageController {
 
+    private String html = "<html><head><title>Message</title></head>"
+            + "<body><p id=\"message\">Hello World!</p></body></html>";
     @GetMapping("")
     public String getMessage() {
-        return "Hello World";
+        return this.html;
     }
 }
